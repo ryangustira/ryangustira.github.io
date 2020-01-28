@@ -137,10 +137,10 @@
               <img src="img/clients/gojek.png" alt="client1">
             </div>
             <div class="col m4 s12 center">
-              <img src="img/clients/tokopedia.png" alt="client1">
+              <img src="img/clients/tokopedia.png" alt="client2">
             </div>
             <div class="col m4 s12 center">
-              <img src="img/clients/traveloka.png" alt="client1">
+              <img src="img/clients/traveloka.png" alt="client3">
             </div>
           </div>
         </div>
@@ -276,6 +276,30 @@
       <script type="text/javascript" src="js/materialize.min.js"></script>
 
       <script type="text/javascript" src="js/script.js"></script>
+
+      <script>
+        const sideNav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sideNav);
+
+        const slider = document.querySelectorAll('.slider');
+        M.Slider.init(slider, {
+          indicators: false,
+          height: 500,
+          transition: 600,
+          interval: 3000
+        });
+
+        const parallax = document.querySelectorAll('.parallax');
+        M.Parallax.init(parallax);
+
+        const materialbox = document.querySelectorAll('.materialboxed');
+        M.Materialbox.init(materialbox);
+
+        const scroll = document.querySelectorAll('.scrollspy');
+        M.ScrollSpy.init(scroll, {
+          scrollOffset: 50
+        });
+      </script>
 
     </body>
   </html> 
